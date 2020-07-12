@@ -12,7 +12,7 @@ var VideoPlayer = ({ video }) => (
         <h3>{video.snippet.title}</h3>
         <div>{video.snippet.description}</div>
       </div>
-      </div>
+    </div>
 )
 
 // PropTypes tell other developers what `props` a component expects
