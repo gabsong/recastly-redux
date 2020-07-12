@@ -1,8 +1,9 @@
-import React from 'react';
-import VideoListEntry from './VideoListEntry.js';
+import React from 'react'
+import PropTypes from 'prop-types'
+import VideoListEntry from './VideoListEntry.js'
 
-var VideoList = ({videos, handleVideoListEntryTitleClick}) => (
-  <div className="video-list">
+var VideoList = ({ videos, handleVideoListEntryTitleClick }) => (
+  <div className='video-list'>
     {
       videos.map(video => (
         <VideoListEntry
@@ -13,10 +14,10 @@ var VideoList = ({videos, handleVideoListEntryTitleClick}) => (
       ))
     }
   </div>
-);
+)
 
 VideoList.propTypes = {
-  videos: React.PropTypes.array.isRequired
-};
+  videos: PropTypes.array.isRequired
+}
 
-export default VideoList;
+export default VideoList
