@@ -1,5 +1,4 @@
-var webpack = require('webpack');
-var path = require('path');
+const path = require('path')
 
 module.exports = {
   entry: {
@@ -18,14 +17,14 @@ module.exports = {
         exclude: /node_modules/,
         loader: 'babel-loader',
         options: {
-          presets: ['env', 'react', 'stage-0']
+          presets: ['@babel/preset-env', '@babel/preset-react']
         }
       }
     ]
-  },
-  externals: {
-    'react/addons': true, // important!!
-    'react/lib/ReactContext': true,
-    'react/lib/ExecutionEnvironment': true
   }
-};
+  // externals: {
+  //   'react/addons': true, // important!!
+  //   'react/lib/ReactContext': true,
+  //   'react/lib/ExecutionEnvironment': true
+  // }
+}
